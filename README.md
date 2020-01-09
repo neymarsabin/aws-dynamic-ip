@@ -20,16 +20,15 @@ Or install it yourself as:
 ## Usage
 
 Requirements for the gem: 
-    * Environment Variables
-	  * AWS_REGION
-	  * aws secret access keys setup to environment variables
-	* Assigned tags with key *role* and *env* in every ec2 instances
+* Environment Variables
+  * AWS_REGION
+  * aws secret access keys setup to environment variables
+  * Assigned tags with key *role* and *env* in every ec2 instances
 	  
 Using the gem: 
 	Wherever you need Ip's of running instances: 
-	```ruby
+
 	Aws::Dynamic::IP.fetch_ips(env, role)
-	```
 
 ## Development
 
