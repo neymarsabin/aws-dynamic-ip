@@ -9,14 +9,14 @@ Gem::Specification.new do |spec|
   spec.email         = ["reddevil.sabin@gmail.com"]
 
   spec.summary       = %q{ Fetch IP of ec2 instances based on tags }
-  spec.homepage      = "github.com/neymarsabin/aws-dynamic-ip"
+  spec.homepage      = "https://github.com/neymarsabin/aws-dynamic-ip"
   spec.license       = "MIT"
 
   spec.metadata["allowed_push_host"] = ""
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "github.com/neymarsabin/aws-dynamic-ip"
-  spec.metadata["changelog_uri"] = "Put your gem's CHANGELOG.md URL here."
+  spec.metadata["source_code_uri"] = "https://github.com/neymarsabin/aws-dynamic-ip"
+  spec.metadata["changelog_uri"] = "https://github.com/neymarsabin/aws-dynamic-ip/CHANGELOG.md"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
