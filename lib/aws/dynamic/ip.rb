@@ -1,6 +1,5 @@
 require "aws/dynamic/ip/version"
 require 'aws-sdk-ec2'
-require 'json'
 
 module Aws
   module Dynamic
