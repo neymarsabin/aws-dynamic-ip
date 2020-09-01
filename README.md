@@ -31,7 +31,7 @@ Using the gem:
 	require 'amazon_web/dynamic/ip'
 	require 'aws-sdk-ec2'
 
-	Aws::Dynamic::IP.fetch_ips(env, role)
+	AmazonWeb::Dynamic::IP.fetch_ips(env, role)
 
 ## Development
 
