@@ -1,6 +1,6 @@
-RSpec.describe Aws::Dynamic::Ip do
+RSpec.describe AmazonWeb::Dynamic::Ip do
   it "has a version number" do
-    expect(Aws::Dynamic::Ip::VERSION).not_to be nil
+    expect(AmazonWeb::Dynamic::Ip::VERSION).not_to be nil
   end
 
   it "does something useful" do

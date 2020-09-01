@@ -1,11 +1,8 @@
-require "aws/dynamic/ip/version"
-require 'aws-sdk-ec2'
-
-module Aws
+module AmazonWeb
   module Dynamic
     class IP
       def self.fetch_ips(env, role)
-        client = Aws::EC2::Client.new(region: ENV['AWS_REGION'])
+        client = Aws::EC2::Client.new(region: 'us-west-2' || ENV['AWS_REGION'])
         ec2 = Aws::EC2::Resource.new(client: client)
         ips = []
         ec2.instances({ filters:

@@ -1,10 +1,10 @@
 lib = File.expand_path("lib", __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "aws/dynamic/ip/version"
+require "amazon_web/dynamic/ip/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "aws-dynamic-ip"
-  spec.version       = Aws::Dynamic::Ip::VERSION
+  spec.version       = AmazonWeb::Dynamic::Ip::VERSION
   spec.authors       = ["Sabin Nepal"]
   spec.email         = ["reddevil.sabin@gmail.com"]
 
@@ -30,5 +30,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "aws-sdk-ec2"
+  spec.add_development_dependency "aws-sdk-ec2", ["~> 1.192.0"]
+  spec.add_runtime_dependency "aws-sdk-ec2", ["~> 1.192.0"]
 end
