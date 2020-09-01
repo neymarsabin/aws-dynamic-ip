@@ -28,6 +28,9 @@ Requirements for the gem:
 Using the gem: 
 	Wherever you need Ip's of running instances: 
 
+	require 'amazon_web/dynamic/ip'
+	require 'aws-sdk-ec2'
+
 	Aws::Dynamic::IP.fetch_ips(env, role)
 
 ## Development
