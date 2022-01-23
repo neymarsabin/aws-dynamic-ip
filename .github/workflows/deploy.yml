@@ -1,0 +1,15 @@
+name: Release Gem to RubyGems
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  release:
+    name: "Release ${{ github.ref_name }}"
+    runs-on: [ ubuntu-latest ]
+    steps:
+      - name: Publish Gem
+        uses: dawidd6/action-publish-gem@v1
+        with:
+          api_key: ${{ secrets.RUBYGEMS_API_KEY }}
