@@ -1,3 +1,4 @@
+require 'aws-sdk-ec2'
 class AwsDynamicIp
   def self.fetch_ips(env, role)
     client = ::Aws::EC2::Client.new(region: 'us-west-2' || ENV['AWS_REGION'])
