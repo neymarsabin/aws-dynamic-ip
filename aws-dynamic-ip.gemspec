@@ -1,10 +1,9 @@
 lib = File.expand_path("lib", __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "amazon_web/dynamic/ip/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "aws-dynamic-ip"
-  spec.version       = AmazonWeb::Dynamic::Ip::VERSION
+  spec.version       = "0.0.1"
   spec.authors       = ["Sabin Nepal"]
   spec.email         = ["reddevil.sabin@gmail.com"]
 
@@ -26,6 +25,5 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
-
   spec.add_dependency "aws-sdk-ec2", ["~> 1.192.0"]
 end
