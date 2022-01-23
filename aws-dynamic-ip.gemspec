@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/neymarsabin/aws-dynamic-ip"
   spec.license       = "MIT"
 
-  spec.metadata["allowed_push_host"] = ""
+  spec.metadata["allowed_push_host"] = "http://localhost:3000"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/neymarsabin/aws-dynamic-ip"
